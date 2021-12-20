@@ -117,3 +117,14 @@ INSERT INTO `marketing_campaign` (`id`, `name`, `from`, `to`)
 VALUES
     (1, 'Velikonoční výprodej', '2021-02-01 00:00:00', '2021-04-30 00:00:00'),
     (2, 'Akce 50% sleva', '2021-06-01 00:00:00', '2021-09-30 00:00:00');
+
+INSERT INTO `car_customer` (`car_id`, `customer_id`) VALUES
+    (1, 1),
+    (2, 2),
+    (3, 3),
+    (4, 3),
+    (5, 3),
+    (6, 4);
+
+INSERT INTO `customer_has_marketing_campaign` (`customer_id`, `marketing_campaign_id`, `car_id`) VALUES
+    (3, 1, 4);

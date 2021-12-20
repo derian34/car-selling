@@ -39,6 +39,8 @@ services:
     command: bash -c "npm install && npm run start"
   adminer:
     image: adminer
+    depends_on:
+      - mysqldb_car_selling
     restart: always
     ports:
       - '8080:8080'
